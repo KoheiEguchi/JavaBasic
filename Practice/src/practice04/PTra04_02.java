@@ -21,12 +21,12 @@ int index=1;
 			}
 
 			// ★ 変数indexの値が3で割り切れ、5で割り切れない場合は、「Fizz」と出力
-			else if(index%3==0&&!(index%5==0)) {
+			else if(index%3==0) {
 				System.out.println("Fizz");
 			}
 
 			// ★ 変数indexの値が5で割り切れ、3で割り切れない場合は、「Buzz」と出力
-			else if(index%5==0&&!(index%3==0)) {
+			else if(index%5==0) {
 				System.out.println("Buzz");
 			}
 

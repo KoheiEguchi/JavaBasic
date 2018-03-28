@@ -30,7 +30,7 @@ public class PTra18_01 {
 		// ★ ArrayListに格納された値を全て表示してください
 		// ※ できれば拡張for文を使いましょう
         for(String sentence:array) {
-        	System.out.println(sentence);
+        	System.out.println(sentence.replaceAll(",", "\t"));
         }
 
 	}

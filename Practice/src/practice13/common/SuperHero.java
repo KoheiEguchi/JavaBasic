@@ -2,7 +2,7 @@ package practice13.common;
 
 public class SuperHero extends Hero {
 
-	Item equipment;
+	private Item equipment;
 
 	public int attack(){
 		return super.attack()+equipment.getAdditionalDamage();

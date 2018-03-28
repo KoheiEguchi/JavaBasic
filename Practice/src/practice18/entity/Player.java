@@ -1,10 +1,10 @@
 package practice18.entity;
 
 public class Player {
-	String position;
-	String name;
-	String country;
-	String team;
+	private String position;
+	private String name;
+	private String country;
+	private String team;
 
 	public String getPosition() {
 		return position;

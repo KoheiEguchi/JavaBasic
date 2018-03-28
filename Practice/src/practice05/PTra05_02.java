@@ -29,9 +29,8 @@ int input=Integer.parseInt(line);
 		 *
 		 *  ※##は変数inputの中身
 		 */
-int num=input%2;
 
-switch(num) {
+switch(input%2) {
 	case 0:
 		System.out.println(input+"は偶数です");
 		break;

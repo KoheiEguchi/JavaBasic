@@ -35,7 +35,7 @@ int progress=0;
 			dice = dice + 1;
 
 			// ★ サイコロを振って出た目を、変数progressに加算してください
-			progress=progress+dice;
+			progress+=dice;
 
 			// ★ 「残り##マス」と出力してください（##には、残りマスの数を入れてください）
 			System.out.println("残り"+(map-progress)+"マス");

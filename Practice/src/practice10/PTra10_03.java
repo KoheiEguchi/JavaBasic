@@ -30,7 +30,7 @@ public class PTra10_03 {
 		String line= scanner.nextLine();
 
 		// ★ 変数lineに格納されている値を','で区切り、配列にしてください（Stringクラスのメソッドを使用します）
-		String[] list=line.split(",",0);
+		String[] list=line.split(",");
 
 		// ★ 配列にした値を、usの各フィールドに代入してください
 		// ユーザIDに該当する値が数値でなかった場合は、エラーでプログラムが止まっても良いです

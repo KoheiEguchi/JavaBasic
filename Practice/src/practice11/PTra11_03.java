@@ -11,7 +11,7 @@ public class PTra11_03 {
 	/*
 	 * ★ PTra11_03クラスに、クラスフィールドでint型のnumberを定義してください
 	 */
-	int number;
+	static int number;
 
 	/*
 	 * ★ PTra11_03クラスのコンストラクタを引数なしで定義してください
@@ -24,8 +24,7 @@ public class PTra11_03 {
 	public static void main(String[] args) {
 
 		// ★ sumメソッドを呼び出してください
-		PTra11_03 pTra11_03 =new PTra11_03();
-		pTra11_03.sum(1,2);
+		new PTra11_03().sum(1,2);
 
 	}
 

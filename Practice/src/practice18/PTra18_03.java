@@ -47,18 +47,19 @@ public class PTra18_03 {
 		}
 
 		// ★ ①のArrayListの中から"レアル・マドリード", "バルセロナ"の選手を除外してください
-		for( int i=array.size()-1;i>=0;i--) {
-			if(array.get(i).getTeam().equals("レアル・マドリード")||array.get(i).getTeam().equals("バルセロナ")){
+		for (int i = array.size() - 1; 0 < i; i--) {
+			Player player = array.get(i);
+			String team = player.getTeam();
+			if ("レアル・マドリード".equals(team) || "バルセロナ".equals(team)) {
 				array.remove(i);
 			}
-
 		}
 
 
 
 		// ★ 削除後のArrayListの中身を全件出力してください
 		for (Player sentence : array) {
-			System.out.println(sentence.toString());
+			System.out.println(sentence);
 		}
 
 

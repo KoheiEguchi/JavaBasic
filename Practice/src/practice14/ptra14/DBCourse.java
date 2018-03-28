@@ -8,8 +8,7 @@ public class DBCourse implements Course{
 	}
 
 	public String[] getCourseUnit() {
-		String[] list= {"DB基礎","SQL基礎","正規化","SQL応用"};
-		return list;
+		return new String[]{"DB基礎","SQL基礎","正規化","SQL応用"};
 	}
 
 }

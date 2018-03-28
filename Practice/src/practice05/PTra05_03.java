@@ -58,12 +58,12 @@ switch(line) {
 
 
 			// ★ 変数indexに1を足して、変数indexに代入してください
-	index=index+1;
+	index++;
 		}
 
 		// ★ 変数mountain、river、oceanの票数をそれぞれ出力してください
-System.out.println(mountain);
-System.out.println(river);
-System.out.println(ocean);
+System.out.println("山"+mountain);
+System.out.println("川"+river);
+System.out.println("海"+ocean);
 	}
 }

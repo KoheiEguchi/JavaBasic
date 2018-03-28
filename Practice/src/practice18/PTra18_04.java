@@ -56,36 +56,35 @@ public class PTra18_04 {
 		int mfCount = 0;
 		int fwCount = 0;
 
-		for( int i=array.size()-1;i>=0;i--) {
-			if(array.get(i).getPosition().equals("GK")){
-				if(gkCount < 1) {
-					System.out.println(array.get(i));
-					gkCount++;
-				}
-			}
-		}
-		for( int i=array.size()-1;i>=0;i--) {
-			if(array.get(i).getPosition().equals("DF")){
-				if(dfCount < 4) {
-					System.out.println(array.get(i));
-					dfCount++;
-				}
-			}
-		}
-		for( int i=array.size()-1;i>=0;i--) {
-			if(array.get(i).getPosition().equals("MF")){
-				if(mfCount < 4) {
-					System.out.println(array.get(i));
-					mfCount++;
-				}
-			}
-		}
-		for( int i=array.size()-1;i>=0;i--) {
-			if(array.get(i).getPosition().equals("FW")){
-				if(fwCount < 2) {
-					System.out.println(array.get(i));
-					fwCount++;
-				}
+		for (Player player : array) {
+			switch (player.getPosition()) {
+				case "GK":
+					if (gkCount < 1) {
+						System.out.println(player);
+						gkCount++;
+					}
+					break;
+
+				case "DF":
+					if (dfCount < 4) {
+						System.out.println(player);
+						dfCount++;
+					}
+					break;
+
+				case "MF":
+					if (mfCount < 4) {
+						System.out.println(player);
+						mfCount++;
+					}
+					break;
+
+				case "FW":
+					if (fwCount < 2) {
+						System.out.println(player);
+						fwCount++;
+					}
+					break;
 			}
 		}
 
